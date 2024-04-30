@@ -1,0 +1,120 @@
+* {
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: scroll;
+    transition: 0.35s ease-in-out;
+}
+
+.header{
+    padding-top: 50px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dark{
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    font-size: 1.2rem;
+    margin-top: 25px;
+    border-radius:25px;
+    cursor: pointer;
+    background-color: black;
+    color: aliceblue;
+    transition: 0.35s ease-in-out;
+}
+
+.screen {
+    width: 1050px;
+    margin: 5px auto;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.watch {
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 2rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 25px rgb(107, 0, 247);
+    transition: 0.3S ease-in-out;
+}
+
+.timer {
+    font-size: 2rem;
+}
+
+.controls {
+    height: 100px;
+    width: 400px;
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+#start, #stop, #reset {
+    padding: 10px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 50px;
+    border: none;
+    background-color: chartreuse;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+#lap {
+    padding: 10px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(132, 0, 255);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.laptimes {
+    height: 200px;
+}
+#laplist{
+    max-height : 180px;
+    overflow-y: scroll;
+    scroll-margin: 2px;
+}
+.list{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none ;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+::-webkit-scrollbar {
+    width: 5px;
+  }
